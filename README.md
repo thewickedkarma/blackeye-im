@@ -1,5 +1,5 @@
 # blackeye-im
-This is a improved version of blackeye with ngrok support which was not working in the previous blackeye.
+This is a improved version of blackeye with ngrok support which was not working in the previous blackeye version.
 
 Installation:
 
