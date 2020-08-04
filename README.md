@@ -11,4 +11,4 @@ Usage:
 
 ./blackeye.sh
 
-Note: Made for Educational Purposes,use it with mutual consent of the victim(ironic).
+Note: Made for Educational Purposes,use it with mutual consent of the victim (little ironic).
