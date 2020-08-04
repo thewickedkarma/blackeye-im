@@ -3,7 +3,7 @@ This is an improved version of blackeye with ngrok support which was not working
 
 Installation:
 
-![be](https://imgur.com/a/hpR2Mc6)
+!(https://imgur.com/a/hpR2Mc6)
 cd blackeye-im
 chmod +x ./blackeye.sh
 
