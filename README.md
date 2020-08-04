@@ -12,4 +12,4 @@ Usage:
 ./blackeye.sh
 
 Note: Made for Educational Purposes,use it with mutual consent of the victim (little ironic).
-![be](https://imgur.com/a/hpR2Mc6)
+![be](https://github.com/Git-Ankitraj/blackeye-im/blob/master/Screenshot%20from%202020-08-04%2017-10-17.png)
