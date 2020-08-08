@@ -10,7 +10,7 @@ chmod +x ./blackeye.sh
 ```
 Usage:
 
-./blackeye.sh
+```./blackeye.sh```
 
 Note: Made for Educational Purposes,use it with mutual consent of the victim (little ironic).
 ![be](https://github.com/Git-Ankitraj/blackeye-im/blob/master/Screenshot%20from%202020-08-04%2019-31-05.png)
