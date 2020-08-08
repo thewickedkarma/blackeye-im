@@ -1,12 +1,13 @@
 # blackeye-im
-This is an improved version of blackeye with ngrok support which was not working in the previous blackeye version.
+This is an improved version of blackeye with 38 templates and improved ngrok support which was not working in the previous blackeye version.
 
 Installation:
 
-
+```
 cd blackeye-im
-chmod +x ./blackeye.sh
 
+chmod +x ./blackeye.sh
+```
 Usage:
 
 ./blackeye.sh
