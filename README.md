@@ -27,7 +27,7 @@ Line,Reddit,StackOverflow.
 Facebook,DeviantArt,Github,Google and Messenger.
 ### Upgraded by: @Git-Ankitraj (https://github.com/Git-Ankitraj/blackeye-im)
 
-##### Now, there's total 38 templates. All upgraded. 
+##### Now, there's total 40 templates. All upgraded. 
 
 -----------------------------------------------------------------------------------------------------------------------------
 
