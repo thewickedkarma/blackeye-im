@@ -49,7 +49,7 @@ Next update:Thinking of improving blackeye by providing the exact location of vi
 
 ##### They are available on the pro version of Blackeye including more websites with paid content.
 
-###   Contact me on Instagram : @suljot_gjoka for the Pro Version
+
 
 -----------------------------------------------------------------------------------------------------------------------------
 
