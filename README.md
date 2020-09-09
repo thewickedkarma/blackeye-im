@@ -15,7 +15,7 @@ Note: Made for Educational Purposes,use it with mutual consent of the victim (li
 ![be](https://github.com/Git-Ankitraj/blackeye-im/blob/master/Screenshot%20from%202020-08-08%2014-25-39.png)
 
  
-Next update:Thinking of improving blackeye by providing the exact location of victim with the help of coordinates. (include the google maps link)
+Next update: Provide the exact location of victim with the help of coordinates. (include the google maps link)
 -----------------------------------------------------------------------------------------------------------------------------
 
 ## BLACKEYE v1.6
