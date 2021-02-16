@@ -27,7 +27,7 @@
 
 <p align="center">
 
-<a href="#"><img title="blackeye-im" width= "50%" src="https://i.imgur.com/5N5Kdjw.png"></a>
+<a href="#"><img title="blackeye-im" width= "20%" src="https://i.imgur.com/5N5Kdjw.png"></a>
 
 </p>
 
