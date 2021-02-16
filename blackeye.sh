@@ -328,61 +328,61 @@ hostnameip=$(grep  -o "</td></tr><tr><th>Hostname:.*" iptracker.log | cut -d "<"
 if [[ $hostnameip != "" ]]; then
 printf "\e[1;92m[*] Hostname:\e[0m\e[1;77m %s\e[0m\n" $hostnameip
 fi
-##
+
 
 reverse_dns=$(grep -a "</td></tr><tr><th>Hostname:.*" iptracker.log | cut -d "<" -f1)
 if [[ $reverse_dns != "" ]]; then
 printf "\e[1;92m[*] Reverse DNS:\e[0m\e[1;77m %s\e[0m\n" $reverse_dns
 fi
-##
+
 
 
 if [[ $continent != "" ]]; then
 printf "\e[1;92m[*] IP Continent:\e[0m\e[1;77m %s\e[0m\n" $continent
 fi
-##
+
 
 country=$(grep -o 'Country:.*' iptracker.log | cut -d ">" -f3 | cut -d "&" -f1)
 if [[ $country != "" ]]; then
 printf "\e[1;92m[*] IP Country:\e[0m\e[1;77m %s\e[0m\n" $country
 fi
-##
+
 
 state=$(grep -o "tracking lessimpt.*" iptracker.log | cut -d "<" -f1 | cut -d ">" -f2)
 if [[ $state != "" ]]; then
 printf "\e[1;92m[*] State:\e[0m\e[1;77m %s\e[0m\n" $state
 fi
-##
+
 city=$(grep -o "City Location:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
 
 if [[ $city != "" ]]; then
 printf "\e[1;92m[*] City Location:\e[0m\e[1;77m %s\e[0m\n" $city
 fi
-##
+
 
 isp=$(grep -o "ISP:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
 if [[ $isp != "" ]]; then
 printf "\e[1;92m[*] ISP:\e[0m\e[1;77m %s\e[0m\n" $isp
 fi
-##
+
 
 as_number=$(grep -o "AS Number:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
 if [[ $as_number != "" ]]; then
 printf "\e[1;92m[*] AS Number:\e[0m\e[1;77m %s\e[0m\n" $as_number
 fi
-##
+
 
 ip_speed=$(grep -o "IP Address Speed:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
 if [[ $ip_speed != "" ]]; then
 printf "\e[1;92m[*] IP Address Speed:\e[0m\e[1;77m %s\e[0m\n" $ip_speed
 fi
-##
+
 ip_currency=$(grep -o "IP Currency:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
 
 if [[ $ip_currency != "" ]]; then
 printf "\e[1;92m[*] IP Currency:\e[0m\e[1;77m %s\e[0m\n" $ip_currency
 fi
-##
+
 printf "\n"
 rm -rf iptracker.log
 
