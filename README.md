@@ -25,14 +25,14 @@
 
 </p>
 
+
+
+
+
+
+
 <p align="center">
-
-<a href="#"><img title="blackeye-im" width= "20%" src="https://i.imgur.com/5N5Kdjw.png"></a>
-
-</p>
-
-<p align="center">
- <center> <h1> Author:Git-Ankitraj</h1> </center>
+ <center> <h3> Author:Git-Ankitraj</h3> </center>
 
 
 
@@ -44,7 +44,7 @@
 <li>Serveo.net <li> Location Tracing
 </ul>
 
-# blackeye-im
+# blackeye-im <a href="#"><img title="blackeye-im" width= "20%" src="https://i.imgur.com/5N5Kdjw.png"></a>
 This is an improved version of blackeye with improved ngrok support.total of 40 templates and upgraded phising pages.
 
 Installation:
