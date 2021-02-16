@@ -4,15 +4,6 @@
 
 </p>
 
-<p align="center">
-
-<a href="#"><img title="blackeye-im" src=""></a>
-
-</p>
-
-<p align="center">
-
-<a href="https://github.com/Git-Ankitraj"><img title="Author" src=""></a>
 
 <a href="#"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-green?style=for-the-badge"></a>
 
@@ -33,6 +24,15 @@
 <a href="https://github.com/Git-Ankitraj/blackeye-im/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Git-Ankitraj/blackeye-im?label=Watchers&color=blue&style=flat-square"></a>
 
 </p>
+
+<p align="center">
+
+<a href="#"><img title="blackeye-im" src="https://i.imgur.com/jix91XR.jpg"></a>
+
+</p>
+
+<p align="center">
+<a href="#"><img title="AUTHOR" src="https://img.shields.io/badge/Author-Git-Ankitraj-green.svg?style=flat-square"></a>
 
 
 
