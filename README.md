@@ -44,6 +44,7 @@ Ultimate phishing tool with ngrok and serveo.
 # Installation:
 # Debian-based distros 
 ```
+git clone https://github.com/Git-Ankitraj/blackeye-im.git
 cd blackeye-im
 chmod +x ./blackeye.sh
 ```
@@ -55,6 +56,7 @@ Usage:
 
 # Arch-based distros
 ```
+git clone https://github.com/Git-Ankitraj/blackeye-im.git
 cd blackeye-im
 chmod +x ./blackeye-arch.sh
 ```
@@ -66,6 +68,7 @@ Usage:
 
 # Termux in Android.
 ```
+git clone https://github.com/Git-Ankitraj/blackeye-im.git
 cd blackeye-im
 chmod +x ./tmxsp.sh
 ```
