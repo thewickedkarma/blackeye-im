@@ -64,7 +64,8 @@ Usage:
 
 ```./blackeye-arch.sh```
 
-
+<p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/UuH3ODI.png"></a>
+</p>
 
 # Termux in Android.
 ```
@@ -77,7 +78,8 @@ Usage:
 ```./tmxsp.sh```
 
 Note: Made for Educational Purposes,use it with mutual consent of the victim (little ironic).
-
+<p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/04jbE6X.png"></a>
+</p>
 
  
 
