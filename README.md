@@ -5,7 +5,7 @@
 <a href="#"><img title="Made in INDIA" src="https://img.shields.io/badge/MADE%20IN-INDIA-green?colorA=%23ff9933&colorB=%23017e40&style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="#"><img title="blackeye-im" src="https://raw.githubusercontent.com/Git-Ankitraj/release-download/master/images/banner/blackeye-im.png"></a>
+<a href="#"><img title="blackeye-im" src="https://i.imgur.com/5N5Kdjw.png"></a>
 </p>
 <p align="center">
 <a href="https://github.com/Git-Ankitraj"><img title="Author" src="https://img.shields.io/badge/Author-Git--Ankitraj-red.svg?style=for-the-badge&logo=github"></a>
