@@ -50,7 +50,7 @@ chmod +x ./blackeye.sh
 Usage:
 
 ```./blackeye.sh```
-![be](https://github.com/Git-Ankitraj/blackeye-im/blob/master/Screenshot%20from%202020-08-08%2014-25-39.png)
+<p>![be](https://github.com/Git-Ankitraj/blackeye-im/blob/master/Screenshot%20from%202020-08-08%2014-25-39.png)
 
 # Arch-based distros
 ```
