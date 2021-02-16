@@ -32,7 +32,7 @@
 </p>
 
 <p align="center">
-<h1> Author:Git-Ankitraj</h1>
+ <center> <h1> Author:Git-Ankitraj</h1> </center>
 
 
 
