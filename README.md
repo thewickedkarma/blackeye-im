@@ -1,6 +1,6 @@
 <p align="left">
 
-<a href="#"><img title="Made in India" src="https://img.shields.io/badge/MADE%20IN-INDIA-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
+<a href="#"><img title="Made in India" src="https://img.shields.io/badge/MADE%20IN-INDIA-orange?colorA=%23ff9933&colorB=%23017e40&style=for-the-badge"></a>
 
 </p>
 
@@ -20,7 +20,7 @@
 
 <p align="center">
 
-<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-1.5-green.svg?style=flat-square"></a>
+<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-1.6-green.svg?style=flat-square"></a>
 
 <a href="#"><img title="Language" src="https://badges.frapsoft.com/bash/v1/bash.png?v=103"></a>
 
