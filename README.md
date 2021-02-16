@@ -40,9 +40,9 @@
 
 
 # Coming soon
-Termux Support
-Serveo.net
-
+<ul type='disc'> <li>Termux Support
+<li>Serveo.net
+</ul>
 
 # blackeye-im
 This is an improved version of blackeye with improved ngrok support.total of 40 templates and upgraded phising pages.
