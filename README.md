@@ -39,7 +39,9 @@
 
 
 
-
+# Coming soon
+Termux Support
+Serveo.net
 
 
 # blackeye-im
