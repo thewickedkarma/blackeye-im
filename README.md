@@ -47,7 +47,7 @@
  <a href="#"><img title="blackeye-im" width= "20%" src="https://i.imgur.com/5N5Kdjw.png"></a>
  
 # blackeye-im
-Ultimate phising tool with ngrok and serveo.
+Ultimate phishing tool with ngrok and serveo.
 
 Installation:
 
