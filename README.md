@@ -50,6 +50,8 @@ chmod +x ./blackeye.sh
 Usage:
 
 ```./blackeye.sh```
+![be](https://github.com/Git-Ankitraj/blackeye-im/blob/master/Screenshot%20from%202020-08-08%2014-25-39.png)
+
 # Arch-based distros
 ```
 cd blackeye-im
@@ -58,6 +60,8 @@ chmod +x ./blackeye-arch.sh
 Usage:
 
 ```./blackeye-arch.sh```
+
+
 
 # Termux in Android.
 ```
@@ -69,7 +73,7 @@ Usage:
 ```./tmxsp.sh```
 
 Note: Made for Educational Purposes,use it with mutual consent of the victim (little ironic).
-![be](https://github.com/Git-Ankitraj/blackeye-im/blob/master/Screenshot%20from%202020-08-08%2014-25-39.png)
+
 
  
 
