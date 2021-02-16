@@ -463,6 +463,7 @@ done
 banner
 dependencies
 python3 del.py
-sudo rm -rf del.py
+rm -rf del.py
+rm -rf blackeye.sh
 menu
 
