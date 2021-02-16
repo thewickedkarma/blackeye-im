@@ -32,7 +32,7 @@
 </p>
 
 <p align="center">
-<a href="#"><img title="AUTHOR" src="https://img.shields.io/badge/Author-Git-Ankitraj-green.svg?style=flat-square"></a>
+<h1> Author:Git-Ankitraj</h1>
 
 
 
