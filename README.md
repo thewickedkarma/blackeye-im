@@ -28,12 +28,12 @@
 
 
 
+# Serveo.net tunneling will be added soon.
 
 
-
-# Coming soon
+# BLACKEYE v1.7
 <ul type='disc'> <li>Termux Support
-<li>Serveo.net <li> Location Tracing
+<li> Location Tracing (includes google maps link)
 </ul>
 
  <a href="#"><img title="blackeye-im" width= "20%" src="https://i.imgur.com/5N5Kdjw.png"></a>
