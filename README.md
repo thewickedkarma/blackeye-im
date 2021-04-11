@@ -52,7 +52,7 @@ chmod +x ./blackeye.sh
 Usage:
 
 ```./blackeye.sh```
-<p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/irdzUjd.png"></a>
+<p><a href="https://i.imgur.com/irdzUjd.png"><img title="blackeye-im" src="https://i.imgur.com/irdzUjd.png"></a>
 </p>
 
 # Arch-based distros
@@ -79,7 +79,7 @@ Usage:
 <p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/YuAb55M.jpg"></a>
 </p>
 Note: Made for Educational Purposes,use it with mutual consent of the victim.
-<p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/TJFmaGq.png"></a>
+<p><a href="https://i.imgur.com/TJFmaGq.png"><img title="blackeye-im" src="https://i.imgur.com/TJFmaGq.png"></a>
 </p>
 
  
