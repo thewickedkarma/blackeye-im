@@ -225,7 +225,7 @@ printf "     \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and ar
 printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused by BlackEye.  ::\e[0m\n"
 printf "     \e[101m\e[1;77m:: Only use for educational purporses!!                      ::\e[0m\n"
 printf "\n"
-printf "     \e[101m\e[1;77m::     BLACKEYE v1.5! By @Git-Ankitraj & @thelinuxchoice     ::\e[0m\n"
+printf "     \e[101m\e[1;77m::     BLACKEYE-IM! By @Git-Ankitraj & @thelinuxchoice     ::\e[0m\n"
 printf "\n"
 }
 
