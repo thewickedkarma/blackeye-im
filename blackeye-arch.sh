@@ -1,6 +1,4 @@
 #!/bin/bash
-# BLACKEYE v1.0 is an upgrade from original ShellPhish Tool (https://github.com/thelinuxchoice/shellphish) by thelinuxchoice under GNU LICENSE 
-# Coded by: @thelinuxchoice (https://github.com/thelinuxchoice/blackeye)
 # Upgraded by: @Git-Ankitraj (https://github.com/Git-Ankitraj/blackeye-im)
 #Fixed support of ngrok.In the previous version of blackeye,you did not get to see the ngrok link while running blackeye but now that issue has been fixed in this new version of blackeye, that is , blackeye-im(improved).
 trap 'printf "\n";stop;exit 1' 2
@@ -224,7 +222,7 @@ printf "     \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and ar
 printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused by BlackEye.  ::\e[0m\n"
 printf "     \e[101m\e[1;77m:: Only use for educational purporses!!                      ::\e[0m\n"
 printf "\n"
-printf "     \e[101m\e[1;77m::     BLACKEYE v1.5! By @Git-Ankitraj & @thelinuxchoice     ::\e[0m\n"
+printf "     \e[101m\e[1;77m::     BLACKEYE-IM By @Git-Ankitraj & @thelinuxchoice     ::\e[0m\n"
 printf "\n"
 }
 
