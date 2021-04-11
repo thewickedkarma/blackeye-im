@@ -1,6 +1,5 @@
 #!/bin/bash
-# BLACKEYE v1.0 is an upgrade from original ShellPhish Tool (https://github.com/thelinuxchoice/shellphish) by thelinuxchoice under GNU LICENSE 
-# Coded by: @thelinuxchoice (https://github.com/thelinuxchoice/blackeye)
+
 # Upgraded by: @Git-Ankitraj (https://github.com/Git-Ankitraj/blackeye-im)
 #Fixed support of ngrok.In the previous version of blackeye,you did not get to see the ngrok link while running blackeye but now that issue has been fixed in this new version of blackeye, that is , blackeye-im(improved).
 
