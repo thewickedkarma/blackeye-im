@@ -52,7 +52,7 @@ chmod +x ./blackeye.sh
 Usage:
 
 ```./blackeye.sh```
-<p><a href="#"><img title="blackeye-im" src="https://github.com/Git-Ankitraj/blackeye-im/blob/master/Screenshot%20from%202020-08-08%2014-25-39.png"></a>
+<p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/irdzUjd.png"></a>
 </p>
 
 # Arch-based distros
@@ -65,8 +65,7 @@ Usage:
 
 ```./blackeye-arch.sh```
 
-<p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/UuH3ODI.png"></a>
-</p>
+
 
 # Termux in Android.
 ```
@@ -80,7 +79,7 @@ Usage:
 <p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/YuAb55M.jpg"></a>
 </p>
 Note: Made for Educational Purposes,use it with mutual consent of the victim.
-<p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/04jbE6X.png"></a>
+<p><a href="#"><img title="blackeye-im" src="https://i.imgur.com/TJFmaGq.png"></a>
 </p>
 
  
