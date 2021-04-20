@@ -105,4 +105,12 @@ Facebook,DeviantArt,Github,Google and Messenger.
 Usage of BlackEye for attacking targets without prior mutual consent is illegal. It's the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program. Only use for educational purposes.
 
 
-
+## Contact:
+<p align="center">
+    <a href="https://www.instagram.com/ankitraj_707/">
+    <img alt="Instagram" src="https://img.shields.io/badge/Instagram%20-%23000000.svg?&style=for-the-badge&logo=Medium&logoColor=white"/></a>
+    <a href="https://twitter.com/Ankitraj7079">
+    <img alt="Twitter" src="https://img.shields.io/badge/Twitter%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"</a>
+    <a href="https://discord.com/channels/@me/798505744843538432">
+    <img alt="Discord" src="https://img.shields.io/badge/Discord%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a>
+</p>
