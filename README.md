@@ -108,7 +108,7 @@ Usage of BlackEye for attacking targets without prior mutual consent is illegal.
 ## Contact:
 <p align="center">
     <a href="https://www.instagram.com/ankitraj_707/">
-    <img alt="Instagram" src="https://img.shields.io/badge/Instagram%20-%23000000.svg?&style=for-the-badge&logo=Medium&logoColor=white"/></a>
+    <img alt="Instagram" src="https://img.shields.io/badge/Instagram%20-%23000000.svg?&style=for-the-badge&logo=Instagram&logoColor=white"/></a>
     <a href="https://twitter.com/Ankitraj7079">
     <img alt="Twitter" src="https://img.shields.io/badge/Twitter%20-%231DA1F2.svg?&style=for-the-badge&logo=Twitter&logoColor=white"</a>
     <a href="https://discord.com/channels/@me/798505744843538432">
