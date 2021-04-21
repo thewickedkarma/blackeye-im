@@ -20,10 +20,7 @@ printf ""
 else
 mkdir logs
 fi
-if [[ -e Modules.zip ]]; then
-unzip -qq Modules.zip
-rm Modules.zip
-fi
+
 if [[ -e blackeye/ngrok ]]; then
 printf ""
 else
@@ -95,7 +92,7 @@ printf "\e[0m\n"
 printf "\e[0m\e[1;91m [\e[1;97m~\e[1;91m]\e[1;93m Installation Completed !! \e[0m\n"
 printf "\e[0m\n"
 sleep 2
-printf "\e[0m\e[1;91m [\e[1;97m~\e[1;91m]\e[1;93m Type \e[1;96m./blackeye.sh \e[1;93mto run thye script !! \e[0m\n"
+printf "\e[0m\e[1;91m [\e[1;97m~\e[1;91m]\e[1;93m Type \e[1;96m./blackeye.sh \e[1;93mto run the script !! \e[0m\n"
 printf "\e[0m\n"
 printf "\e[0m\n"
 
