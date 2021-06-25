@@ -1,3 +1,5 @@
+chmod +x *.sh
+
 declare -A osInfo;
 osInfo[/etc/redhat-release]=yum
 osInfo[/etc/arch-release]=pacman
@@ -27,5 +29,6 @@ do
 
 done
 echo Installation Completed
-echo Blackeye will start automtically
-echo Or type '\e[101m\e[1;77m./blackeye.sh\e[0m' manually.
+echo Blackeye will start automtically.
+echo if it does not start, type ./blackeye.sh manually. | lolcat
+sleep 5; figlet Blackeye-im && ./blackeye.sh
