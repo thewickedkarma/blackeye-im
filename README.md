@@ -31,19 +31,17 @@
 
 
 
-# BLACKEYE v1.7
+# BLACKEYE v2.0
 <ul type='disc'> <li>Termux Support
-<li> Location Tracing (includes google maps link)
- <li> Ngrok URL shortening using tny.im API(blacklisted now :/)
+<li> New latest Webpages
+
 </ul>
-# Serveo.net tunneling will be added soon.
  <a href="#"><img title="blackeye-im" width= "20%" src="https://i.imgur.com/5N5Kdjw.png"></a>
  
 # blackeye-im
 Ultimate phishing tool with ngrok and serveo.
 
-# Installation:
-# Debian-based distros 
+# Installation (for linux):
 ```
 git clone https://github.com/Git-Ankitraj/blackeye-im.git
 cd blackeye-im
