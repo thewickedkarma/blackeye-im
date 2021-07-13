@@ -12,9 +12,9 @@
 <a href="#"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-green?style=for-the-badge"></a>
 </p>
 <p align="center">
-<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-1.6-green.svg?style=flat-square"></a>
+<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-2.0-green.svg?style=flat-square"></a>
 <a href="#"><img title="Language" src="https://badges.frapsoft.com/bash/v1/bash.png?v=103"></a>
-<a href="https://github.com/Git-Ankitraj/followers"><img title="Followers" src="https://img.shields.io/github/followers/Git-Ankitraj?color=blue&style=flat-square"></a>
+<a href="https://github.com/Git-Ankitraj/followers"><img title="Followers" src="https://img.shields.io/github/followers/The-Burning?color=blue&style=flat-square"></a>
 <a href="https://github.com/Git-Ankitraj/blackeye-im/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Git-Ankitraj/blackeye-im?color=red&style=flat-square"></a>
 <a href="https://github.com/Git-Ankitraj/blackeye-im/network/members"><img title="Forks" src="https://img.shields.io/github/forks/Git-Ankitraj/blackeye-im?color=red&style=flat-square"></a>
 <a href="https://github.com/Git-Ankitraj/blackeye-im/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Git-Ankitraj/blackeye-im?label=Watchers&color=blue&style=flat-square"></a>
