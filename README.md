@@ -46,6 +46,7 @@ Ultimate phishing tool with ngrok and serveo.
 git clone https://github.com/Git-Ankitraj/blackeye-im.git
 cd blackeye-im
 chmod +x ./setup.sh
+./setup.sh
 ```
 Usage:
 
