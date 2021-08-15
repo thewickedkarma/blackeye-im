@@ -14,16 +14,18 @@ do
         echo ${osInfo[$f]} detected..
         echo Installing dependencies...
         if ((${osInfo[$f]} == apt-get)); then
-            sudo apt-get install wget curl php unzip -y
+            sudo apt-get install wget curl php unzip lolcat figlet -y
         fi
         if ((${osInfo[$f]} == pacman)); then
-            sudo pacman -S wget curl php unzip --noconfirm
+            sudo pacman -S wget curl php unzip figlet --noconfirm
+            sudo pacman -S gem
+            sudo gem install lolcat
         fi
         if ((${osInfo[$f]} == yum)); then
-            sudo yum install wget curl php unzip
+            sudo yum install wget curl php unzip lolcat figlet
         fi
         if ((${osInfo[$f]} == emerge )); then
-            sudo emerge -u wget curl php unzip
+            sudo emerge -u wget curl php unzip lolcat figlet
         fi
 
     fi
