@@ -1,5 +1,11 @@
+<head><script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-
+  gtag('config', 'G-TG0LL5Z9SE');
+  </script> </head>
+  
 
 <p align="left">
 <a href="#"><img title="Made in INDIA" src="https://img.shields.io/badge/MADE%20IN-INDIA-green?colorA=%23ff9933&colorB=%23017e40&style=for-the-badge"></a>
