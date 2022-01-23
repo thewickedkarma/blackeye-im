@@ -13,7 +13,7 @@
 </p>
 <p align="center">
 <a href="#"><img title="Version" src="https://img.shields.io/badge/Version-2.0-green.svg?style=flat-square"></a>
-<a href="#"><img title="Language" src="https://badges.frapsoft.com/bash/v1/bash.png?v=103"></a>
+<img title="Language" src="https://badges.frapsoft.com/bash/v1/bash.png">
 <a href="https://github.com/The-Burning/followers"><img title="Followers" src="https://img.shields.io/github/followers/The-Burning?color=blue&style=flat-square"></a>
 <a href="https://github.com/The-Burning/blackeye-im/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/The-Burning/blackeye-im?color=red&style=flat-square"></a>
 <a href="https://github.com/The-Burning/blackeye-im/network/members"><img title="Forks" src="https://img.shields.io/github/forks/The-Burning/blackeye-im?color=red&style=flat-square"></a>
@@ -37,9 +37,11 @@
 
 </ul>
  <a href="#"><img title="blackeye-im" width= "20%" src="https://i.imgur.com/5N5Kdjw.png"></a>
- 
-# blackeye-im
-Ultimate phishing tool with ngrok and serveo.
+
+
+# Blackeye-im
+
+Ultimate phishing tool powered by ngrok
 
 # Installation (for linux):
 ```
