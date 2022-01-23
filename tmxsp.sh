@@ -96,5 +96,4 @@ printf "\e[0m\e[1;91m [\e[1;97m~\e[1;91m]\e[1;93m Type \e[1;96m./blackeye.sh \e[
 printf "\e[0m\n"
 printf "\e[0m\n"
 
-rm -rf del.py
-rm -rf blackeye-arch.sh
+
