@@ -31,9 +31,11 @@
 
 
 
-# BLACKEYE v2.0
-<ul type='disc'> <li>Termux Support
-<li> New latest Webpages
+# BLACKEYE v2.5
+<ul type='disc'> <li>Added new port forwarding method 'Localtunnel' (might have some issues)
+<li>Link shortening using Bitly and Tinyurl API
+<li>Location Tracing based on IP address (includes google map)
+
 
 </ul>
  <a href="#"><img title="blackeye-im" width= "20%" src="https://i.imgur.com/5N5Kdjw.png"></a>
@@ -74,9 +76,6 @@ Note: Made for Educational Purposes,use it with mutual consent of the victim.
  
 
 -----------------------------------------------------------------------------------------------------------------------------
-
-## BLACKEYE v2.0
-### UPDATES :Added new websites and Upgraded the phishing pages to make it look more authentic
 
 -----------------------------------------------------------------------------------------------------------------------------
 
