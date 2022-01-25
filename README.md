@@ -13,7 +13,7 @@
 <a href="#"><img title="Language" src="https://img.shields.io/badge/Shell-555555?style=for-the-badge&logo=shell&logoColor=white"></a>
 </p>
 <p align="center">
-<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-2.0-green.svg?style=flat-square"></a>
+<a href="#"><img title="Version" src="https://img.shields.io/badge/Version-2.5-green.svg?style=flat-square"></a>
 <a href="https://github.com/The-Burning/followers"><img title="Followers" src="https://img.shields.io/github/followers/The-Burning?color=blue&style=flat-square"></a>
 <a href="https://github.com/The-Burning/blackeye-im/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/The-Burning/blackeye-im?color=red&style=flat-square"></a>
 <a href="https://github.com/The-Burning/blackeye-im/network/members"><img title="Forks" src="https://img.shields.io/github/forks/The-Burning/blackeye-im?color=red&style=flat-square"></a>
