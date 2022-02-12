@@ -8,16 +8,16 @@
 <a href="#"><img title="blackeye-im" src="https://i.imgur.com/5N5Kdjw.png"></a>
 </p>
 <p align="center">
-<a href="https://github.com/The-Burning"><img title="Author" src="https://img.shields.io/badge/Author-The--Burning-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/thewickedkarma"><img title="Author" src="https://img.shields.io/badge/Author-The--Burning-red.svg?style=for-the-badge&logo=github"></a>
 <a href="#"><img title="Open Source" src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4-green?style=for-the-badge"></a>
 <a href="#"><img title="Language" src="https://img.shields.io/badge/Shell-555555?style=for-the-badge&logo=shell&logoColor=white"></a>
 </p>
 <p align="center">
 <a href="#"><img title="Version" src="https://img.shields.io/badge/Version-2.5-green.svg?style=flat-square"></a>
-<a href="https://github.com/The-Burning/followers"><img title="Followers" src="https://img.shields.io/github/followers/The-Burning?color=blue&style=flat-square"></a>
-<a href="https://github.com/The-Burning/blackeye-im/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/The-Burning/blackeye-im?color=red&style=flat-square"></a>
-<a href="https://github.com/The-Burning/blackeye-im/network/members"><img title="Forks" src="https://img.shields.io/github/forks/The-Burning/blackeye-im?color=red&style=flat-square"></a>
-<a href="https://github.com/The-Burning/blackeye-im/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/The-Burning/blackeye-im?label=Watchers&color=blue&style=flat-square"></a>
+<a href="https://github.com/thewickedkarma/followers"><img title="Followers" src="https://img.shields.io/github/followers/thewickedkarma?color=blue&style=flat-square"></a>
+<a href="https://github.com/thewickedkarma/blackeye-im/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/thewickedkarma/blackeye-im?color=red&style=flat-square"></a>
+<a href="https://github.com/thewickedkarma/blackeye-im/network/members"><img title="Forks" src="https://img.shields.io/github/forks/thewickedkarma/blackeye-im?color=red&style=flat-square"></a>
+<a href="https://github.com/thewickedkarma/blackeye-im/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/thewickedkarma/blackeye-im?label=Watchers&color=blue&style=flat-square"></a>
 </p>
 
 
@@ -43,11 +43,11 @@
 
 # Blackeye-im
 
-Ultimate phishing tool powered by ngrok (<a href='https://the-burning.github.io/blackeye-im'>Know More</a>)
+Ultimate phishing tool powered by ngrok (<a href='https://thewickedkarma.github.io/blackeye-im'>Know More</a>)
 
 # Installation (for linux):
 ```
-git clone https://github.com/The-Burning/blackeye-im.git
+git clone https://github.com/thewickedkarma/blackeye-im.git
 cd blackeye-im
 chmod +x ./setup.sh
 ./setup.sh
@@ -60,7 +60,7 @@ Usage:
 
 # Android (termux and equivalents).
 ```
-git clone https://github.com/The-Burning/blackeye-im.git
+git clone https://github.com/thewickedkarma/blackeye-im.git
 cd blackeye-im
 chmod +x ./tmxsp.sh
 ```
