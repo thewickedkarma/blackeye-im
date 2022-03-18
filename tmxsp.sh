@@ -1,4 +1,3 @@
-banner
 printf "\e[0m\n"
 printf "\e[0m\e[1;91m [\e[1;97m~\e[1;91m]\e[1;93m Installing Packages ....\e[0m\n"
 printf "\e[0m\n"
@@ -10,29 +9,14 @@ apt install php -y
 apt install unzip -y
 printf "\e[0m\n"
 printf "\e[0m\e[1;91m [\e[1;97m~\e[1;91m]\e[1;93m Setting Up Environment ....\e[0m\n"
-if [[ -d .htr ]]; then
-printf ""
-else
-mkdir blackeye
-fi
-if [[ -d logs ]]; then
-printf ""
-else
-mkdir logs
-fi
-
-if [[ -e blackeye/ngrok ]]; then
-printf ""
-else
 arch=$(uname -a | grep -o 'arm' | head -n1)
 arch2=$(uname -a | grep -o 'Android' | head -n1)
 if [[ $arch == *'arm'* ]] || [[ $arch2 == *'Android'* ]] ; then
 curl -LO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip > /dev/null 2>&1
 if [[ -e ngrok-stable-linux-arm.zip ]]; then
 unzip ngrok-stable-linux-arm.zip > /dev/null 2>&1
-mv ngrok blackeye
 rm -rf ngrok-stable-linux-arm.zip
-chmod +x blackeye/ngrok
+chmod +x ngrok
 else
 printf "\n \e[1;31m[\e[0m\e[1;77m!\e[0m\e[1;31m]\e[0m\e[1;93m Error \e[1;31m[\e[0m\e[1;77m!\e[0m\e[1;31m]\e[0m\e[1;96m Install Ngrok Manually.\e[0m\n"
 exit 1
@@ -41,27 +25,22 @@ else
 curl -LO https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-386.zip > /dev/null 2>&1
 if [[ -e ngrok-stable-linux-386.zip ]]; then
 unzip ngrok-stable-linux-386.zip > /dev/null 2>&1
-mv ngrok blackeye
 rm -rf ngrok-stable-linux-386.zip
-chmod +x blackeye/ngrok
+chmod +x ngrok
 else
 printf "\n \e[1;31m[\e[0m\e[1;77m!\e[0m\e[1;31m]\e[0m\e[1;93m Error \e[1;31m[\e[0m\e[1;77m!\e[0m\e[1;31m]\e[0m\e[1;96m Install Ngrok Manually.\e[0m\n"
 exit 1
 fi
 fi
 fi
-if [[ -e blackeye/loclx ]]; then
-printf ""
-else
 archa=$(uname -a | grep -o 'arm' | head -n1)
 arch2a=$(uname -a | grep -o 'Android' | head -n1)
 if [[ $archa == *'arm'* ]] || [[ $arch2a == *'Android'* ]] ; then
 curl -LO https://lxpdownloads.sgp1.digitaloceanspaces.com/cli/loclx-linux-arm.zip > /dev/null 2>&1
 if [[ -e loclx-linux-arm.zip ]]; then
 unzip loclx-linux-arm.zip > /dev/null 2>&1
-mv loclx blackeye
 rm -rf loclx-linux-arm.zip
-chmod +x blackeye/loclx
+chmod +x loclx
 else
 printf "\n \e[1;31m[\e[0m\e[1;77m!\e[0m\e[1;31m]\e[0m\e[1;93m Error \e[1;31m[\e[0m\e[1;77m!\e[0m\e[1;31m]\e[0m\e[1;96m Install LocalXpose Manually.\e[0m\n"
 exit 1
@@ -70,9 +49,8 @@ else
 curl -LO https://lxpdownloads.sgp1.digitaloceanspaces.com/cli/loclx-linux-386.zip > /dev/null 2>&1 
 if [[ -e loclx-linux-386.zip ]]; then
 unzip loclx-linux-386.zip > /dev/null 2>&1
-mv loclx blackeye
 rm -rf loclx-linux-386.zip
-chmod +x blackeye/loclx
+chmod +x loclx
 
 
 else
