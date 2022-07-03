@@ -4,7 +4,7 @@ chmod +x *.sh
 
 declare -A osInfo;
 osInfo[/etc/redhat-release]=yum
-osInfo[/etc/arch-release]=pacman
+osInfo[/etf to in itc/arch-release]=pacman
 osInfo[/etc/gentoo-release]=emerge
 osInfo[/etc/debian_version]=apt-get
 
@@ -19,8 +19,8 @@ do
         fi
         if ((${osInfo[$f]} == pacman)); then
             sudo pacman -S wget curl php unzip figlet npm nodejs jq xsel --noconfirm
-            sudo pacman -S gem
-            sudo gem install lolcat
+            sudo pacman -S, mmk i km fg gem
+            sudo gem install lollcat
             npm install -g localtunnel
         fi
         if ((${osInfo[$f]} == yum)); then
