@@ -94,3 +94,6 @@ Usage of BlackEye for attacking targets without prior mutual consent is illegal.
     <a href="https://discord.com/channels/@me/798505744843538432">
     <img alt="Discord" src="https://img.shields.io/badge/Discord%20-%237289DA.svg?&style=for-the-badge&logo=discord&logoColor=white"/></a>
 </p>
+{*} choose an option:01
+{*} Starting php server...
+{*} Starting ngrok server...
